@@ -162,32 +162,6 @@ To figure out a good first issue to work on, join our Slack workspace and visit 
 
 You should also check out our [Contributing guidelines](./CONTRIBUTING.md).
 
-### Contributors
-
-Thanks goes to these wonderful people who contributed to this website:
-<a href = "https://github.com/json-schema-org/website/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=json-schema-org/website"/>
-</a>
-
-<sub>Made with [contributors-img](https://contrib.rocks).</sub>
-
-### Sponsors
-
-[![Sponsors](https://opencollective.com/json-schema/sponsors.svg)](https://opencollective.com/json-schema/sponsors.svg?avatarHeight=90)
-
-### Backers
-
-**Thank you to all our backers!**
-[![Backers](https://opencollective.com/json-schema/backers.svg)](https://opencollective.com/json-schema/backers.svg?avatarHeight=90)
-
-## Connect with the JSON Schema Community
-
-<p align="left">
-    <a href="https://json-schema.org/slack" target="blank" style="margin-right: 5px;"><img align="center" src="https://img.icons8.com/color/48/null/slack-new.png" alt="JSON Schema Slack" height="30" width="40" /></a>
-    <a href="https://twitter.com/jsonschema" target="blank" style="margin-right: 5px;"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="JSON Schema Twitter" height="30" width="40" /></a>
-    <a href="https://www.linkedin.com/company/jsonschema" target="blank" style="margin-right: 5px;"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="JSON Schema LinkedIn" height="30" width="40" /></a>
-    <a href="https://www.youtube.com/@JSONSchemaOrgOfficial" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="JSON Schema YouTube" height="30" width="40" /></a>
-</p>
 
 ## Inspired by
 This document has been inspired by [AsyncAPI website README.md](https://github.com/asyncapi/website/blob/master/README.md).
