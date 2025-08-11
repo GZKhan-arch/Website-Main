@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-bottom {
+    clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 85%, 100% 0);
+  }
+
+  .clip-both {
+    clip-path: polygon(0 15%, 0 100%, 0% 100%, 100% 85%, 100% 0);
+  }
+
+  .clip-top {
+    clip-path: polygon(0 15%, 0 100%, 0% 100%, 100% 100%, 100% 0);
+  }
+
+  @media (min-width: 320px) and (max-width: 759px) {
+    .clip-bottom {
+      clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 95%, 100% 0);
+    }
+
+    .clip-both {
+      clip-path: polygon(0 05%, 0 100%, 0% 100%, 100% 95%, 100% 0);
+    }
+
+    .clip-top {
+      clip-path: polygon(0 05%, 0 100%, 0% 100%, 100% 100%, 100% 0);
+    }
+  }
+}
+
+.text-stroke-1 {
+  text-shadow: black 0 0 1em;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+.DocSearch-Button-Keys {
+  display: none !important;
+}
+
+/* .herobtn { */
+  /* background-color: transparent !important; */
+  /* justify-content: center; */
+  /* width: 168px; */
+  /* height: 32px; */
+  /* padding: 8px 8px; */
+  /* margin-right: 10px; */
+  /* display: flex; */
+  /* border: 1px solid #E3E8EE;
+border-radius: 4px; */
+/* } */
+
+/* @media (max-width: 1027px) { */
+  .DocSearch-Button-Container {
+    height: 40px;
+    padding: 0px;
+    border: none;
+  }
+
+  .DocSearch-Button {
+    margin: 0;
+    width: 39px;
+  }
+
+  .DocSearch-Button-Placeholder {
+    display: none;
+  }
+
+  .DocSearch-Search-Icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  /* .herobtn .DocSearch-Button-Container {
+    margin-right: 4px;
+    margin-left: 4px;
+  } */
+/* } */
+
+@media (max-width: 450px) {
+  .DocSearch-Button {
+    margin: 0;
+  }
+}
+
+.DocSearch-Button:active,
+.DocSearch-Button:focus,
+.DocSearch-Button:hover {
+  outline: 0 none transparent !important;
+  border: transparent !important;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/** Style Algolia */
+
+.keygrad{
+  --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8) !important;
+}
+.keyshadow{
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,0.4) !important;
+}
+.keyshadow[data-theme=dark]{
+  --docsearch-key-shadow: inset 0 -2px 0 0 #ffffff, inset 0 0 1px 1px #ffffff, 0 2px 2px 0 rgba(3, 4, 9, 0.3) !important;
+}
+
+.search-input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 194px;
+  margin: 0 auto;
+  padding: 5px;
+  overflow: visible;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  display: flex;
+  border-color: white !important;
+  color: white !important;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0.25rem;
+  outline: 0;
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  transition-property: border-color, color;
+  -webkit-font-smoothing: antialiased;
+}
+
+.search-input svg {
+  margin-left: 40px;
+}
+
+
+
+.search-input span {
+  margin-left: 15px;
+}
+
+.search-input:hover,
+.search-input:focus {
+  color: white;
+  border-color: white;
+}
+
+.search-input:hover::placeholder,
+.search-input:focus::placeholder {
+  color: white;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-hint {
+  position: absolute;
+  top: 7px;
+  right: 19px;
+  padding: 3px 5px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.125em;
+  font-size: 13px;
+  font-family: inherit;
+  pointer-events: none;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  line-height: 14px;
+}
+
+@media (min-width: 50em) {
+  .search-hint {
+    display: flex;
+  }
+}
+
+.navSearch svg {
+  color: black;
+}
+
+.herobtn span {
+  color: white !important;
+  font-weight: 600;
+}
+
+.herobtn svg {
+  color: white !important;
+  width: 20px;
+  height: 20px;
+}
+
+.herobtn span:hover {
+  outline: 0 none transparent;
+}
+
+.anchor {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.anchor #community {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  /* change this value to match the height of the header */
+}
+/* In your CSS file */
+.mt-custom {
+  margin-top: 4.4rem;
+}
+
+
+@layer base{
+  body {
+      @apply dark:bg-slate-800 bg-white;
+  }
+}
+
